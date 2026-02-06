@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudos Flask - Camp Code</title>
+    <title>Estudos Flask - Aulas</title>
 </head>
 <body>
     <div>
         <h3>Estudo Flask</h3>
-        <h5>@campCodeBrasil</h5>
     </div>
+  
+
     <div>
-        <p>Bem vindos a aula de Flask</p>
+
+        <p>Bem vindos {{context.usuario1.nome}} {{context.usuario1.sobrenome}} a aula de Flask</p>
+        <h4>Navegacoes</h4>
+        
+        <a href="{{url_for('bem_vindos')}}">Entrar</a>
+        <a href="{{url_for('contatos')}}">Contatos</a>
 
     </div>
 </body>
